@@ -1,0 +1,491 @@
+/**
+ * BusinessOrange Theme Custom Styles
+ * Responsive design, side menu, and animations
+ */
+
+/* ============================================
+   Base Styles
+   ============================================ */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+	line-height: 1.6;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* ============================================
+   Header Styles
+   ============================================ */
+
+.wp-block-group.alignfull.has-white-background-color {
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+	transition: all 0.3s ease;
+}
+
+/* Navigation Styles */
+.wp-block-navigation {
+	font-weight: 500;
+}
+
+.wp-block-navigation a {
+	transition: color 0.3s ease;
+}
+
+.wp-block-navigation a:hover {
+	color: var(--wp--preset--color--primary-orange) !important;
+}
+
+/* Button Styles */
+.wp-block-button__link {
+	transition: all 0.3s ease;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.wp-block-button__link:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 4px 12px rgba(0, 102, 204, 0.3);
+}
+
+/* ============================================
+   Side Menu Styles
+   ============================================ */
+
+.side-menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	display: none;
+}
+
+.side-menu.active {
+	display: block;
+}
+
+.side-menu-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(4px);
+}
+
+.side-menu-content {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 350px;
+	max-width: 90%;
+	height: 100%;
+	background: #FFFFFF;
+	box-shadow: -2px 0 20px rgba(0, 0, 0, 0.1);
+	transform: translateX(100%);
+	transition: transform 0.3s ease;
+	overflow-y: auto;
+	z-index: 10000;
+}
+
+.side-menu.active .side-menu-content {
+	transform: translateX(0);
+}
+
+.side-menu-close {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	background: none;
+	border: none;
+	font-size: 28px;
+	cursor: pointer;
+	color: #1A1A1A;
+	padding: 10px;
+	z-index: 10001;
+	transition: color 0.3s ease;
+}
+
+.side-menu-close:hover {
+	color: var(--wp--preset--color--primary-orange);
+}
+
+.side-menu-header {
+	padding: 40px 30px 30px;
+	border-bottom: 1px solid #E0E0E0;
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+
+.side-menu-nav {
+	padding: 30px;
+}
+
+.side-menu-nav .wp-block-navigation {
+	flex-direction: column;
+	gap: 20px;
+}
+
+.side-menu-nav a {
+	display: block;
+	padding: 12px 0;
+	color: #1A1A1A;
+	text-decoration: none;
+	font-weight: 500;
+	transition: color 0.3s ease;
+	border-bottom: 1px solid #F5F5F5;
+}
+
+.side-menu-nav a:hover {
+	color: var(--wp--preset--color--primary-orange);
+}
+
+.side-menu-footer {
+	padding: 30px;
+	border-top: 1px solid #E0E0E0;
+	margin-top: auto;
+}
+
+.side-menu-footer p {
+	margin-bottom: 15px;
+	font-weight: 600;
+	color: #1A1A1A;
+}
+
+.side-menu-footer ul {
+	list-style: none;
+	padding: 0;
+	margin-bottom: 30px;
+}
+
+.side-menu-footer ul li {
+	margin-bottom: 10px;
+}
+
+.side-menu-footer ul li a {
+	color: #666666;
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+.side-menu-footer ul li a:hover {
+	color: var(--wp--preset--color--primary-orange);
+}
+
+.side-menu-toggle {
+	transition: color 0.3s ease;
+}
+
+.side-menu-toggle:hover {
+	color: var(--wp--preset--color--primary-orange) !important;
+}
+
+/* ============================================
+   About Tabs Styles
+   ============================================ */
+
+.about-tabs {
+	margin-top: 40px;
+}
+
+.tab-buttons {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	margin-bottom: 40px;
+	flex-wrap: wrap;
+}
+
+.tab-button {
+	padding: 12px 24px;
+	background: transparent;
+	color: #1A1A1A;
+	border: 2px solid #E0E0E0;
+	border-radius: 4px;
+	cursor: pointer;
+	font-weight: 600;
+	transition: all 0.3s ease;
+}
+
+.tab-button:hover {
+	border-color: var(--wp--preset--color--primary-orange);
+	color: var(--wp--preset--color--primary-orange);
+}
+
+.tab-button.active {
+	background: var(--wp--preset--color--primary-orange);
+	color: white;
+	border-color: var(--wp--preset--color--primary-orange);
+}
+
+.tab-pane {
+	display: none;
+	animation: fadeIn 0.3s ease;
+}
+
+.tab-pane.active {
+	display: block;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(10px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/* ============================================
+   Services Section Styles
+   ============================================ */
+
+.wp-block-group.has-white-background-color.has-background {
+	transition: all 0.3s ease;
+	border: 1px solid #E0E0E0;
+	height: 100%;
+}
+
+.wp-block-group.has-white-background-color.has-background:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+	border-color: var(--wp--preset--color--primary-orange);
+}
+
+/* ============================================
+   Pricing Section Styles
+   ============================================ */
+
+.wp-block-group.has-white-background-color.has-background {
+	transition: all 0.3s ease;
+}
+
+.wp-block-group.has-white-background-color.has-background:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* ============================================
+   Clients Carousel Styles (Swiper)
+   ============================================ */
+
+.clients-carousel {
+	padding: 20px 0;
+}
+
+.clients-carousel .swiper-slide {
+	height: auto;
+}
+
+.client-logo {
+	transition: all 0.3s ease;
+}
+
+.client-logo:hover {
+	transform: scale(1.05);
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ============================================
+   Contact Form Styles
+   ============================================ */
+
+.businessorange-contact-form input,
+.businessorange-contact-form textarea {
+	transition: border-color 0.3s ease;
+}
+
+.businessorange-contact-form input:focus,
+.businessorange-contact-form textarea:focus {
+	outline: none;
+	border-color: var(--wp--preset--color--primary-orange);
+}
+
+.businessorange-contact-form button {
+	transition: all 0.3s ease;
+}
+
+.businessorange-contact-form button:hover {
+	background-color: var(--wp--preset--color--secondary-orange) !important;
+	transform: translateY(-2px);
+	box-shadow: 0 4px 12px rgba(0, 102, 204, 0.3);
+}
+
+/* ============================================
+   Footer Styles
+   ============================================ */
+
+.wp-block-social-links a {
+	transition: transform 0.3s ease;
+}
+
+.wp-block-social-links a:hover {
+	transform: scale(1.2);
+}
+
+.newsletter-form input:focus {
+	outline: none;
+	border-color: var(--wp--preset--color--primary-orange);
+}
+
+.newsletter-form button:hover {
+	background: var(--wp--preset--color--secondary-orange) !important;
+	transform: translateY(-2px);
+}
+
+/* ============================================
+   Responsive Design
+   ============================================ */
+
+/* Tablet Styles (768px - 1023px) */
+@media screen and (max-width: 1023px) {
+	.wp-block-columns {
+		flex-wrap: wrap;
+	}
+
+	.wp-block-column {
+		flex-basis: 50% !important;
+		margin-bottom: 30px;
+	}
+
+	.wp-block-heading {
+		font-size: 32px !important;
+	}
+
+	.wp-block-heading.has-text-align-center {
+		font-size: 36px !important;
+	}
+}
+
+/* Mobile Styles (max-width: 767px) */
+@media screen and (max-width: 767px) {
+	/* Header */
+	.wp-block-group.alignwide {
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+	}
+
+	.wp-block-navigation {
+		width: 100%;
+		justify-content: center;
+	}
+
+	/* Hero Section */
+	.wp-block-heading {
+		font-size: 32px !important;
+		text-align: center;
+	}
+
+	.wp-block-paragraph {
+		font-size: 16px !important;
+		text-align: center;
+	}
+
+	.wp-block-buttons {
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	/* Columns */
+	.wp-block-column {
+		flex-basis: 100% !important;
+		width: 100%;
+		margin-bottom: 30px;
+	}
+
+	/* Headings */
+	.wp-block-heading.has-text-align-center {
+		font-size: 28px !important;
+	}
+
+	/* Sections */
+	.wp-block-group.alignfull {
+		padding-top: 50px !important;
+		padding-bottom: 50px !important;
+	}
+
+	/* Side Menu */
+	.side-menu-content {
+		width: 100%;
+		max-width: 100%;
+	}
+
+	/* Tabs */
+	.tab-buttons {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.tab-button {
+		width: 100%;
+	}
+
+	/* Contact Form */
+	.businessorange-contact-form {
+		padding: 20px !important;
+	}
+
+	/* Footer */
+	.wp-block-columns {
+		flex-direction: column;
+	}
+
+	.wp-block-column {
+		margin-bottom: 30px;
+	}
+}
+
+/* ============================================
+   Animations
+   ============================================ */
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.wp-block-group {
+	animation: fadeIn 0.6s ease-out;
+}
+
+/* Smooth Scroll */
+html {
+	scroll-behavior: smooth;
+}
+
+/* ============================================
+   Utility Classes
+   ============================================ */
+
+.text-center {
+	text-align: center;
+}
+
+.mb-0 {
+	margin-bottom: 0;
+}
+
+.mt-0 {
+	margin-top: 0;
+}
+
