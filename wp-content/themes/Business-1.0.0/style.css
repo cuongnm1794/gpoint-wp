@@ -278,7 +278,7 @@ p {
 }
 .active.primary-btn-outline, .primary-btn-outline:hover, .primary-btn-outline:focus {
   background: var(--primary-dark);
-  color: var(--white);
+  /* color: var(--wshite); */
 }
 .deactive.primary-btn-outline {
   color: var(--dark-3);
