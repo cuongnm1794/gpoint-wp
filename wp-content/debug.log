@@ -1,0 +1,250 @@
+[10-Dec-2025 06:51:26 UTC] [SMTP Test] Bắt đầu test gửi mail...
+[10-Dec-2025 06:51:26 UTC] [SMTP] gpoint_business_configure_smtp được gọi
+[10-Dec-2025 06:51:26 UTC] [SMTP] Config applied: Host=mail.gpoint.com.vn, Port=587, Username=noreply@gpoint.com.vn
+[10-Dec-2025 06:51:26 UTC] [SMTP Debug] SMTP ERROR: Failed to connect to server: php_network_getaddresses: getaddrinfo for mail.gpoint.com.vn failed: No such host is known.  (0)
+[10-Dec-2025 06:51:26 UTC] [SMTP Debug] Lỗi SMTP: Không thể kết nối đến máy chủ SMTP. Failed to connect to server
+[10-Dec-2025 06:51:26 UTC] [SMTP Test] wp_mail() trả về FALSE - Có lỗi xảy ra
+[10-Dec-2025 06:51:56 UTC] [SMTP Test] Bắt đầu test gửi mail...
+[10-Dec-2025 06:51:56 UTC] [SMTP] gpoint_business_configure_smtp được gọi
+[10-Dec-2025 06:51:56 UTC] [SMTP] Config applied: Host=gpoint.com.vn, Port=587, Username=noreply@gpoint.com.vn
+[10-Dec-2025 06:51:56 UTC] [SMTP Debug] SERVER -> CLIENT: 220 server-103-241-43-151.da.direct ESMTP Exim 4.99 Wed, 10 Dec 2025 13:51:59 +0700
+
+[10-Dec-2025 06:51:56 UTC] [SMTP Debug] CLIENT -> SERVER: EHLO gpoint.test
+
+[10-Dec-2025 06:51:56 UTC] [SMTP Debug] SERVER -> CLIENT: 250-server-103-241-43-151.da.direct Hello gpoint.test [171.234.10.57]
+250-SIZE 52428800
+250-LIMITS MAILMAX=100 RCPTMAX=150
+250-8BITMIME
+250-PIPELINING
+250-PIPECONNECT
+250-STARTTLS
+250 HELP
+
+[10-Dec-2025 06:51:56 UTC] [SMTP Debug] CLIENT -> SERVER: STARTTLS
+
+[10-Dec-2025 06:51:56 UTC] [SMTP Debug] SERVER -> CLIENT: 220 TLS go ahead
+
+[10-Dec-2025 06:51:56 UTC] [SMTP Debug] CLIENT -> SERVER: EHLO gpoint.test
+
+[10-Dec-2025 06:51:56 UTC] [SMTP Debug] SERVER -> CLIENT: 250-server-103-241-43-151.da.direct Hello gpoint.test [171.234.10.57]
+250-SIZE 52428800
+250-LIMITS MAILMAX=100 RCPTMAX=150
+250-8BITMIME
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH PLAIN LOGIN
+250 HELP
+
+[10-Dec-2025 06:51:56 UTC] [SMTP Debug] CLIENT -> SERVER: AUTH LOGIN
+
+[10-Dec-2025 06:51:56 UTC] [SMTP Debug] SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[10-Dec-2025 06:51:56 UTC] [SMTP Debug] CLIENT -> SERVER: [credentials hidden]
+[10-Dec-2025 06:51:56 UTC] [SMTP Debug] SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[10-Dec-2025 06:51:56 UTC] [SMTP Debug] CLIENT -> SERVER: [credentials hidden]
+[10-Dec-2025 06:51:56 UTC] [SMTP Debug] SERVER -> CLIENT: 235 Authentication succeeded
+
+[10-Dec-2025 06:51:56 UTC] [SMTP Debug] CLIENT -> SERVER: MAIL FROM:<noreply@gpoint.com.vn>
+
+[10-Dec-2025 06:51:57 UTC] [SMTP Debug] SERVER -> CLIENT: 250 OK
+
+[10-Dec-2025 06:51:57 UTC] [SMTP Debug] CLIENT -> SERVER: RCPT TO:<test@gpoint.com.vn>
+
+[10-Dec-2025 06:51:57 UTC] [SMTP Debug] SERVER -> CLIENT: 550 No such recipient here
+
+[10-Dec-2025 06:51:57 UTC] [SMTP Debug] SMTP ERROR: RCPT TO command failed: 550 No such recipient here
+
+[10-Dec-2025 06:51:57 UTC] [SMTP Debug] CLIENT -> SERVER: QUIT
+
+[10-Dec-2025 06:51:57 UTC] [SMTP Debug] SERVER -> CLIENT: 221 server-103-241-43-151.da.direct closing connection
+
+[10-Dec-2025 06:51:57 UTC] [SMTP Debug] Lỗi SMTP: Các người nhận sau đây đã thất bại: test@gpoint.com.vn: No such recipient here
+
+[10-Dec-2025 06:51:57 UTC] [SMTP Test] wp_mail() trả về FALSE - Có lỗi xảy ra
+[10-Dec-2025 06:52:36 UTC] [SMTP Test] Bắt đầu test gửi mail...
+[10-Dec-2025 06:52:36 UTC] [SMTP] gpoint_business_configure_smtp được gọi
+[10-Dec-2025 06:52:36 UTC] [SMTP] Config applied: Host=gpoint.com.vn, Port=587, Username=noreply@gpoint.com.vn
+[10-Dec-2025 06:52:36 UTC] [SMTP Debug] SERVER -> CLIENT: 220 server-103-241-43-151.da.direct ESMTP Exim 4.99 Wed, 10 Dec 2025 13:52:39 +0700
+
+[10-Dec-2025 06:52:36 UTC] [SMTP Debug] CLIENT -> SERVER: EHLO gpoint.test
+
+[10-Dec-2025 06:52:36 UTC] [SMTP Debug] SERVER -> CLIENT: 250-server-103-241-43-151.da.direct Hello gpoint.test [171.234.10.57]
+250-SIZE 52428800
+250-LIMITS MAILMAX=100 RCPTMAX=150
+250-8BITMIME
+250-PIPELINING
+250-PIPECONNECT
+250-STARTTLS
+250 HELP
+
+[10-Dec-2025 06:52:36 UTC] [SMTP Debug] CLIENT -> SERVER: STARTTLS
+
+[10-Dec-2025 06:52:36 UTC] [SMTP Debug] SERVER -> CLIENT: 220 TLS go ahead
+
+[10-Dec-2025 06:52:37 UTC] [SMTP Debug] CLIENT -> SERVER: EHLO gpoint.test
+
+[10-Dec-2025 06:52:37 UTC] [SMTP Debug] SERVER -> CLIENT: 250-server-103-241-43-151.da.direct Hello gpoint.test [171.234.10.57]
+250-SIZE 52428800
+250-LIMITS MAILMAX=100 RCPTMAX=150
+250-8BITMIME
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH PLAIN LOGIN
+250 HELP
+
+[10-Dec-2025 06:52:37 UTC] [SMTP Debug] CLIENT -> SERVER: AUTH LOGIN
+
+[10-Dec-2025 06:52:37 UTC] [SMTP Debug] SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[10-Dec-2025 06:52:37 UTC] [SMTP Debug] CLIENT -> SERVER: [credentials hidden]
+[10-Dec-2025 06:52:37 UTC] [SMTP Debug] SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[10-Dec-2025 06:52:37 UTC] [SMTP Debug] CLIENT -> SERVER: [credentials hidden]
+[10-Dec-2025 06:52:37 UTC] [SMTP Debug] SERVER -> CLIENT: 235 Authentication succeeded
+
+[10-Dec-2025 06:52:37 UTC] [SMTP Debug] CLIENT -> SERVER: MAIL FROM:<noreply@gpoint.com.vn>
+
+[10-Dec-2025 06:52:37 UTC] [SMTP Debug] SERVER -> CLIENT: 250 OK
+
+[10-Dec-2025 06:52:37 UTC] [SMTP Debug] CLIENT -> SERVER: RCPT TO:<cuongnm1794@gmail.com>
+
+[10-Dec-2025 06:52:37 UTC] [SMTP Debug] SERVER -> CLIENT: 250 Accepted
+
+[10-Dec-2025 06:52:37 UTC] [SMTP Debug] CLIENT -> SERVER: DATA
+
+[10-Dec-2025 06:52:37 UTC] [SMTP Debug] SERVER -> CLIENT: 354 Enter message, ending with "." on a line by itself
+
+[10-Dec-2025 06:52:37 UTC] [SMTP Debug] CLIENT -> SERVER: Date: Wed, 10 Dec 2025 06:52:36 +0000
+
+[10-Dec-2025 06:52:37 UTC] [SMTP Debug] CLIENT -> SERVER: To: cuongnm1794@gmail.com
+
+[10-Dec-2025 06:52:37 UTC] [SMTP Debug] CLIENT -> SERVER: From: =?UTF-8?Q?Gpoint_-_Trang_ch=E1=BB=A7?= <noreply@gpoint.com.vn>
+
+[10-Dec-2025 06:52:37 UTC] [SMTP Debug] CLIENT -> SERVER: Subject: =?UTF-8?Q?Test_SMTP_t=E1=BB=AB_GPoint_Business?=
+
+[10-Dec-2025 06:52:37 UTC] [SMTP Debug] CLIENT -> SERVER: Message-ID: <HNDt6aEAPgoHS3b18mBCA4xC79SHt8Vcdq4neezXTkE@gpoint.test>
+
+[10-Dec-2025 06:52:37 UTC] [SMTP Debug] CLIENT -> SERVER: X-Mailer: PHPMailer 6.9.3 (https://github.com/PHPMailer/PHPMailer)
+
+[10-Dec-2025 06:52:37 UTC] [SMTP Debug] CLIENT -> SERVER: MIME-Version: 1.0
+
+[10-Dec-2025 06:52:37 UTC] [SMTP Debug] CLIENT -> SERVER: Content-Type: text/plain; charset=UTF-8
+
+[10-Dec-2025 06:52:37 UTC] [SMTP Debug] CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+[10-Dec-2025 06:52:37 UTC] [SMTP Debug] CLIENT -> SERVER: 
+
+[10-Dec-2025 06:52:37 UTC] [SMTP Debug] CLIENT -> SERVER: Đây là email test SMTP. Nếu nhận được email này thì SMTP đã hoạt động.
+
+[10-Dec-2025 06:52:37 UTC] [SMTP Debug] CLIENT -> SERVER: 
+
+[10-Dec-2025 06:52:37 UTC] [SMTP Debug] CLIENT -> SERVER: .
+
+[10-Dec-2025 06:52:37 UTC] [SMTP Debug] SERVER -> CLIENT: 250 OK id=1vTE40-00000003EAn-21eA
+
+[10-Dec-2025 06:52:37 UTC] [SMTP Debug] CLIENT -> SERVER: QUIT
+
+[10-Dec-2025 06:52:37 UTC] [SMTP Debug] SERVER -> CLIENT: 221 server-103-241-43-151.da.direct closing connection
+
+[10-Dec-2025 06:52:37 UTC] [SMTP Test] wp_mail() trả về TRUE - Email đã được gửi
+[10-Dec-2025 06:52:54 UTC] [SMTP] gpoint_business_configure_smtp được gọi
+[10-Dec-2025 06:52:54 UTC] [SMTP] Config applied: Host=gpoint.com.vn, Port=587, Username=noreply@gpoint.com.vn
+[10-Dec-2025 06:52:54 UTC] [SMTP Debug] SERVER -> CLIENT: 220 server-103-241-43-151.da.direct ESMTP Exim 4.99 Wed, 10 Dec 2025 13:52:57 +0700
+
+[10-Dec-2025 06:52:54 UTC] [SMTP Debug] CLIENT -> SERVER: EHLO gpoint.test
+
+[10-Dec-2025 06:52:54 UTC] [SMTP Debug] SERVER -> CLIENT: 250-server-103-241-43-151.da.direct Hello gpoint.test [171.234.10.57]
+250-SIZE 52428800
+250-LIMITS MAILMAX=100 RCPTMAX=150
+250-8BITMIME
+250-PIPELINING
+250-PIPECONNECT
+250-STARTTLS
+250 HELP
+
+[10-Dec-2025 06:52:54 UTC] [SMTP Debug] CLIENT -> SERVER: STARTTLS
+
+[10-Dec-2025 06:52:54 UTC] [SMTP Debug] SERVER -> CLIENT: 220 TLS go ahead
+
+[10-Dec-2025 06:52:54 UTC] [SMTP Debug] CLIENT -> SERVER: EHLO gpoint.test
+
+[10-Dec-2025 06:52:54 UTC] [SMTP Debug] SERVER -> CLIENT: 250-server-103-241-43-151.da.direct Hello gpoint.test [171.234.10.57]
+250-SIZE 52428800
+250-LIMITS MAILMAX=100 RCPTMAX=150
+250-8BITMIME
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH PLAIN LOGIN
+250 HELP
+
+[10-Dec-2025 06:52:54 UTC] [SMTP Debug] CLIENT -> SERVER: AUTH LOGIN
+
+[10-Dec-2025 06:52:54 UTC] [SMTP Debug] SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[10-Dec-2025 06:52:54 UTC] [SMTP Debug] CLIENT -> SERVER: [credentials hidden]
+[10-Dec-2025 06:52:54 UTC] [SMTP Debug] SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[10-Dec-2025 06:52:54 UTC] [SMTP Debug] CLIENT -> SERVER: [credentials hidden]
+[10-Dec-2025 06:52:54 UTC] [SMTP Debug] SERVER -> CLIENT: 235 Authentication succeeded
+
+[10-Dec-2025 06:52:54 UTC] [SMTP Debug] CLIENT -> SERVER: MAIL FROM:<noreply@gpoint.com.vn>
+
+[10-Dec-2025 06:52:54 UTC] [SMTP Debug] SERVER -> CLIENT: 250 OK
+
+[10-Dec-2025 06:52:54 UTC] [SMTP Debug] CLIENT -> SERVER: RCPT TO:<cuongnm1794@gmail.com>
+
+[10-Dec-2025 06:52:54 UTC] [SMTP Debug] SERVER -> CLIENT: 250 Accepted
+
+[10-Dec-2025 06:52:54 UTC] [SMTP Debug] CLIENT -> SERVER: DATA
+
+[10-Dec-2025 06:52:54 UTC] [SMTP Debug] SERVER -> CLIENT: 354 Enter message, ending with "." on a line by itself
+
+[10-Dec-2025 06:52:54 UTC] [SMTP Debug] CLIENT -> SERVER: Date: Wed, 10 Dec 2025 06:52:54 +0000
+
+[10-Dec-2025 06:52:54 UTC] [SMTP Debug] CLIENT -> SERVER: To: cuongnm1794@gmail.com
+
+[10-Dec-2025 06:52:54 UTC] [SMTP Debug] CLIENT -> SERVER: From: =?UTF-8?Q?Gpoint_-_Trang_ch=E1=BB=A7?= <noreply@gpoint.com.vn>
+
+[10-Dec-2025 06:52:54 UTC] [SMTP Debug] CLIENT -> SERVER: Subject: =?UTF-8?Q?Li=C3=AAn_h=E1=BB=87_m=E1=BB=9Bi_t=E1=BB=AB_Gpoint_-_Trang_ch=E1=BB=A7?=
+
+[10-Dec-2025 06:52:54 UTC] [SMTP Debug] CLIENT -> SERVER: Message-ID: <VRzQFxe0DtsomrYoWOOoS3grFtU3NhEDOlMic6FaI@gpoint.test>
+
+[10-Dec-2025 06:52:54 UTC] [SMTP Debug] CLIENT -> SERVER: X-Mailer: PHPMailer 6.9.3 (https://github.com/PHPMailer/PHPMailer)
+
+[10-Dec-2025 06:52:54 UTC] [SMTP Debug] CLIENT -> SERVER: MIME-Version: 1.0
+
+[10-Dec-2025 06:52:54 UTC] [SMTP Debug] CLIENT -> SERVER: Content-Type: text/plain; charset=UTF-8
+
+[10-Dec-2025 06:52:54 UTC] [SMTP Debug] CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+[10-Dec-2025 06:52:54 UTC] [SMTP Debug] CLIENT -> SERVER: 
+
+[10-Dec-2025 06:52:54 UTC] [SMTP Debug] CLIENT -> SERVER: Bạn có một liên hệ mới:
+
+[10-Dec-2025 06:52:54 UTC] [SMTP Debug] CLIENT -> SERVER: 
+
+[10-Dec-2025 06:52:54 UTC] [SMTP Debug] CLIENT -> SERVER: Tên: cuong manh
+
+[10-Dec-2025 06:52:54 UTC] [SMTP Debug] CLIENT -> SERVER: Email: cuongnm1794@gmail.com
+
+[10-Dec-2025 06:52:54 UTC] [SMTP Debug] CLIENT -> SERVER: Điện thoại: 0979681925
+
+[10-Dec-2025 06:52:54 UTC] [SMTP Debug] CLIENT -> SERVER: Tiêu đề: dsa
+
+[10-Dec-2025 06:52:54 UTC] [SMTP Debug] CLIENT -> SERVER: 
+
+[10-Dec-2025 06:52:54 UTC] [SMTP Debug] CLIENT -> SERVER: Nội dung:
+
+[10-Dec-2025 06:52:54 UTC] [SMTP Debug] CLIENT -> SERVER: ad
+
+[10-Dec-2025 06:52:54 UTC] [SMTP Debug] CLIENT -> SERVER: 
+
+[10-Dec-2025 06:52:54 UTC] [SMTP Debug] CLIENT -> SERVER: .
+
+[10-Dec-2025 06:52:54 UTC] [SMTP Debug] SERVER -> CLIENT: 250 OK id=1vTE4H-00000003EAt-37xq
+
+[10-Dec-2025 06:52:54 UTC] [SMTP Debug] CLIENT -> SERVER: QUIT
+
+[10-Dec-2025 06:52:54 UTC] [SMTP Debug] SERVER -> CLIENT: 221 server-103-241-43-151.da.direct closing connection
+

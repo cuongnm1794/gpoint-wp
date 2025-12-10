@@ -20,13 +20,13 @@
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'admin_gpoint' );
+define( 'DB_NAME', 'gpoint-1' );
 
 /** Database username */
-define( 'DB_USER', 'admin_gpoint' );
+define( 'DB_USER', 'root' );
 
 /** Database password */
-define( 'DB_PASSWORD', 'FsCsLt2z7mxBvtzjXndG' );
+define( 'DB_PASSWORD', 'Manhcuong0107$$' );
 
 /** Database hostname */
 define( 'DB_HOST', 'localhost' );
@@ -86,6 +86,9 @@ $table_prefix = 'wp_';
  * @link https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/
  */
 define( 'WP_DEBUG', false );
+// define( 'WP_DEBUG_LOG', true );
+// define( 'WP_DEBUG_DISPLAY', false );
+// @ini_set( 'display_errors', 0 );
 
 /* Add any custom values between this line and the "stop editing" line. */
 define( 'GPOINT_SMTP_PASSWORD', 'gtyLm3d9KK5qvzSeC5NW' );
