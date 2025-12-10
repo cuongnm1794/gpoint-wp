@@ -22,7 +22,7 @@ function gpoint_business_configure_smtp( $phpmailer ) {
 	
 	// SMTP Credentials
 	$phpmailer->Username = 'noreply@gpoint.com.vn';
-	$phpmailer->Password = 'Gpoint@123456'; // Replace with actual password
+	$phpmailer->Password = 'gtyLm3d9KK5qvzSeC5NW'; // Replace with actual password
 	
 	// Set From address
 	$phpmailer->From     = 'noreply@gpoint.com.vn';
