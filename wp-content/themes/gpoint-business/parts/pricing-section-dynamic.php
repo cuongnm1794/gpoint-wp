@@ -118,7 +118,7 @@ $pricing_plans = gpoint_business_get_json_setting( 'pricing_plans', $default_pla
 						<h6 class="title"><?php echo wp_kses_post( $plan_name ); ?></h6>
 						<p><?php echo esc_html( $plan_description ); ?></p>
 						<div class="price">
-							<h2 class="amount"><?php echo wp_kses_post( $plan_price ); ?></h2>
+							<h3 class="amount"><?php echo wp_kses_post( $plan_price ); ?></h3>
 						</div>
 					</div>
 					<div class="light-rounded-buttons">

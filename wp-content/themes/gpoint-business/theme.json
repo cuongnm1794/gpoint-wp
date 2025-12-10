@@ -8,21 +8,21 @@
 			"defaultPalette": false,
 			"defaultGradients": false,
 			"palette": [
-			{
-				"slug": "primary",
-				"color": "#FF6B35",
-				"name": "Primary"
-			},
-			{
-				"slug": "primary-dark",
-				"color": "#E55A2B",
-				"name": "Primary Dark"
-			},
-			{
-				"slug": "primary-light",
-				"color": "#FFF4F0",
-				"name": "Primary Light"
-			},
+				{
+					"slug": "primary",
+					"color": "#FF6B35",
+					"name": "Primary"
+				},
+				{
+					"slug": "primary-dark",
+					"color": "#E55A2B",
+					"name": "Primary Dark"
+				},
+				{
+					"slug": "primary-light",
+					"color": "#FFF4F0",
+					"name": "Primary Light"
+				},
 				{
 					"slug": "accent",
 					"color": "#00d4d7",
@@ -349,4 +349,3 @@
 		}
 	}
 }
-

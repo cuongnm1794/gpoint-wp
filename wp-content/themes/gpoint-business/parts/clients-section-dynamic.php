@@ -62,7 +62,7 @@ $clients_list = gpoint_business_get_json_setting( 'clients_list', $default_clien
 		<!-- wp:group {"className":"row","layout":{"type":"default"}} -->
 		<div class="wp-block-group row">
 			<!-- wp:group {"className":"col-lg-8 offset-lg-2 col-12","layout":{"type":"default"}} -->
-			<div class="wp-block-group col-lg-8 offset-lg-2 col-12">
+			<div class="wp-block-group col-lg-8 offset-lg-2 col-12" style="display: flex; justify-content: center;">
 				<!-- wp:html -->
 				<!-- <div class="clients-logos">
 					<?php foreach ( $clients_list as $client ) : 
@@ -77,7 +77,7 @@ $clients_list = gpoint_business_get_json_setting( 'clients_list', $default_clien
 					</div>
 					<?php endforeach; ?>
 				</div> -->
-				<img src="<?php echo esc_url( $url_image ); ?>" alt="Brand Logo Images" />
+				<img style="margin: 0 auto" src="<?php echo esc_url( $url_image ); ?>" alt="Brand Logo Images" />
 
 				<!-- /wp:html -->
 			</div>

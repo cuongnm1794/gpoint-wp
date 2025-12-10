@@ -22,7 +22,7 @@ $default_posts = array(
 	array(
 		'title' => 'Hành trình 2 năm - Học bổng thắp sáng ước mơ',
 		'author' => 'BY TIM NORTON',
-		'excerpt' => 'Khi ước mơ được gieo mầm từ những điều nhỏ bé. Từ năm 2016, chương trình Học bổng Colgate ra đời với mong muốn tất cả mọi trẻ em Việt đều xứng đáng sở hữu nụ cười thật tươi trước một tương lai tươi sáng hơn. Để hiện thực hóa điều này, trong hai năm qua, Colgate đã nỗ...',
+		'excerpt' => 'Khi ước mơ được gieo mầm từ những điều nhỏ bé. Từ năm 201, chương trình Học bổng Colgate ra đời với mong muốn tất cả mọi trẻ em Việt đều xứng đáng sở hữu nụ cười thật tươi trước một tương lai tươi sáng hơn. Để hiện thực hóa điều này, trong hai năm qua, Colgate đã nỗ...',
 		'image' => get_template_directory_uri() . '/assets/images/blog/2.png',
 		'link' => '#',
 	),

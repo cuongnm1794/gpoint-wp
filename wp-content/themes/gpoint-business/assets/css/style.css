@@ -4,9 +4,12 @@
 ===========================*/
 :root {
   --font-family: "Inter", sans-serif;
-  --primary: #FF6B35;
-  --primary-dark: #E55A2B;
-  --primary-light: #FFF4F0;
+  /* --primary: #0066CC;
+  --primary-dark: #0052A3;
+  --primary-light: #E6F2FF; */
+  --primary: #5596A8;
+--primary-dark: #476F7A;
+--primary-light: #BFE3EA;
   --accent: #00d4d7;
   --accent-dark: #00bac1;
   --accent-light: #dff9f8;
@@ -1368,7 +1371,7 @@ p {
   display: inline-block;
   position: relative;
   padding-left: 15px;
-  font-size: 55px;
+  font-size: 33px;
 }
 .pricing-style-fourteen .currency {
   font-weight: 400;

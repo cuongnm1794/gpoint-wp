@@ -99,7 +99,7 @@ $use_cf7 = ! empty( $contact_form_7_shortcode ) && ( function_exists( 'wpcf7' ) 
 								<!-- /wp:heading -->
 
 								<!-- wp:paragraph -->
-								<p><?php echo esc_html( $contact_form_description ); ?></p>
+								<p><?php echo str_replace("\\n","<br/>", $contact_form_description ); ?></p>
 								<!-- /wp:paragraph -->
 							</div>
 							<!-- /wp:group -->
