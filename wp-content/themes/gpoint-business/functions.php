@@ -403,6 +403,11 @@ add_action( 'enqueue_block_assets', 'gpoint_business_block_assets' );
 require_once get_template_directory() . '/includes/customizer-settings.php';
 
 /**
+ * Include SMTP Configuration.
+ */
+require_once get_template_directory() . '/includes/smtp-config.php';
+
+/**
  * Include Contact Form Handler.
  */
 require_once get_template_directory() . '/includes/contact-form-handler.php';

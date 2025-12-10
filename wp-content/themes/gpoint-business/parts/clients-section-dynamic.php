@@ -77,7 +77,7 @@ $clients_list = gpoint_business_get_json_setting( 'clients_list', $default_clien
 					</div>
 					<?php endforeach; ?>
 				</div> -->
-				<img src="<?php echo esc_url( $url_image ); ?>" alt="Brand Logo Images" />
+				<img style="margin: 0 auto;" src="<?php echo esc_url( $url_image ); ?>" alt="Brand Logo Images" />
 
 				<!-- /wp:html -->
 			</div>

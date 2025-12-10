@@ -125,9 +125,8 @@ function gpoint_business_handle_contact_form_ajax() {
 	update_post_meta( $post_id, '_contact_subject', $subject );
 	update_post_meta( $post_id, '_contact_name', $name );
 
-	// Send email notification (optional)
-	$admin_email = get_option( 'admin_email' );
-	$contact_email = get_theme_mod( 'contact_email', $admin_email );
+	// Send email notification
+	$recipient_email = 'cuongnm1794@gmail.com';
 	
 	$email_subject = sprintf( __( 'Liên hệ mới từ %s', 'gpoint-business' ), get_bloginfo( 'name' ) );
 	$email_message = sprintf(
@@ -139,7 +138,7 @@ function gpoint_business_handle_contact_form_ajax() {
 		$message
 	);
 
-	wp_mail( $contact_email, $email_subject, $email_message );
+	wp_mail( $recipient_email, $email_subject, $email_message );
 
 	wp_send_json_success( array( 
 		'message' => __( 'Cảm ơn bạn đã liên hệ! Chúng tôi sẽ phản hồi sớm nhất có thể.', 'gpoint-business' )
