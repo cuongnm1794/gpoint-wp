@@ -37,7 +37,7 @@ $cta_title_formatted = nl2br( esc_html( $cta_title ) );
 					<div class="wp-block-group light-rounded-buttons">
 						<!-- wp:html -->
 						<?php if ( $cta_button_text && $cta_button_link ) : ?>
-						<a href="<?php echo esc_url( $cta_button_link ); ?>" class="btn primary-btn-outline"><?php echo wp_kses_post( $cta_button_text ); ?></a>
+						<a href="#contact" class="btn primary-btn-outline"><?php echo wp_kses_post( $cta_button_text ); ?></a>
 						<?php endif; ?>
 						<!-- /wp:html -->
 					</div>

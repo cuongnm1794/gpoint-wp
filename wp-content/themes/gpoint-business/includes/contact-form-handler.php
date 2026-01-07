@@ -126,7 +126,7 @@ function gpoint_business_handle_contact_form_ajax() {
 	update_post_meta( $post_id, '_contact_name', $name );
 
 	// Send email notification
-	$recipient_email = 'cuongnm1794@gmail.com';
+	$recipient_email = 'gpromo@gapit.com.vn';
 	
 	$email_subject = sprintf( __( 'Liên hệ mới từ %s', 'gpoint-business' ), get_bloginfo( 'name' ) );
 	$email_message = sprintf(
